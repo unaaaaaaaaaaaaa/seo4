@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lumière | 產品詳情</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="data.js"></script>
+  <script src="layout.js"></script>
+</head>
+<body>
+  <div class="main-content">
+    <div class="product-detail-container" id="product-detail">
+      <!-- Product detail injected by JS -->
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const productId = urlParams.get('id');
+      const product = products.find(p => p.id === productId);
+
+      const container = document.getElementById('product-detail');
+
+      if (product) {
+        document.title = `Lumière | ${product.name}`;
+        container.innerHTML = `
+          <img src="${product.image}" alt="${product.name}" class="product-detail-img">
+          <div class="product-detail-info">
+            <div class="product-category" style="font-size: 1rem;">${categoryMap[product.category]}</div>
+            <h1 class="product-detail-title">${product.name}</h1>
+            <div class="product-detail-price">${product.price}</div>
+            <p class="product-detail-desc">${product.desc}</p>
+            <a href="#" class="btn" onclick="alert('已加入購物車！'); return false;">加入購物車</a>
+          </div>
+        `;
+      } else {
+        container.innerHTML = `<h2>找不到該產品</h2><p><a href="index.html">返回首頁</a></p>`;
+      }
+    });
+  </script>
+</body>
+</html>

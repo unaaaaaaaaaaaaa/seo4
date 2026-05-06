@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lumière | 韓系精緻彩妝首頁</title>
+  <meta name="description" content="Lumière 提供最優質的韓系美妝產品，讓您散發自然光彩。">
+  <link rel="stylesheet" href="style.css">
+  <script src="data.js"></script>
+  <script src="layout.js"></script>
+</head>
+<body>
+  <div class="main-content">
+    <section class="hero">
+      <div>
+        <h1>LUMIÈRE</h1>
+        <p>探索自然之美，展現您的專屬光芒。<br>頂級韓系質感彩妝，為您帶來無瑕妝容。</p>
+      </div>
+    </section>
+
+    <div class="container">
+      <h2 class="section-title">最新商品 (New Arrivals)</h2>
+      <div class="products-grid" id="products-grid">
+        <!-- Products will be injected here by JS -->
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Render all products on home page
+      renderProducts();
+    });
+  </script>
+</body>
+</html>
