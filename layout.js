@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Inject Footer
   const footerHtml = `
-    <p class="footer-text">© 2026 Lumière Cosmetics. All Rights Reserved. Emphasize your natural beauty.</p>
+    <p class="footer-text">© 2026 Lumière Cosmetics. 保留所有權利。展現您的自然之美。</p>
   `;
   const footer = document.createElement('footer');
   footer.innerHTML = footerHtml;

@@ -1,20 +1,20 @@
 const products = [
-  { id: 'f1', category: 'foundation', name: 'Lumière Glass Foundation', price: '$45.00', image: 'images/foundation_1_1778046744474.png', desc: 'A lightweight liquid foundation providing buildable coverage and a dewy glass-skin finish. Formulated with hydrating essence to keep your skin glowing all day.' },
-  { id: 'f2', category: 'foundation', name: 'Lumière Perfecting Cushion', price: '$52.00', image: 'images/foundation_2_1778046757732.png', desc: 'On-the-go cushion foundation with SPF 50+, offering a flawless blurring effect. Its sleek design makes it perfect for quick touch-ups.' },
-  { id: 'es1', category: 'eyeshadow', name: 'Peach Blossom Palette', price: '$38.00', image: 'images/eyeshadow_1_1778046772609.png', desc: 'A 9-pan palette featuring warm peach and earthy brown tones for versatile eye looks. High pigmentation and buttery smooth texture.' },
-  { id: 'es2', category: 'eyeshadow', name: 'Stardust Glitter Pot', price: '$22.00', image: 'images/eyeshadow_2_1778046787807.png', desc: 'A multi-dimensional glitter pot that adds dazzling sparkle to any eye makeup. Long-lasting and zero fallout.' },
-  { id: 'el1', category: 'eyeliner', name: 'Precision Liquid Eyeliner', price: '$18.00', image: 'images/eyeliner_1_1778046837153.png', desc: 'Ultra-fine liquid eyeliner pen in intense black for sharp, precise wings. Waterproof and smudge-proof formula.' },
-  { id: 'el2', category: 'eyeliner', name: 'Creamy Gel Liner', price: '$16.00', image: 'images/eyeliner_2_1778046852546.png', desc: 'Smudge-proof gel pencil eyeliner in dark espresso brown for a softer, smoky look. Glides on effortlessly.' },
-  { id: 'eb1', category: 'eyebrow', name: 'Sculpt & Define Brow Pencil', price: '$15.00', image: 'images/eyebrow_1_1778046869278.png', desc: 'Dual-ended eyebrow pencil with a precision tip and blending spoolie. Achieve naturally defined brows with ease.' },
-  { id: 'eb2', category: 'eyebrow', name: 'Soft Focus Brow Powder', price: '$24.00', image: 'images/eyebrow_2_1778046882971.png', desc: 'Two-tone brow powder palette for customized color matching and natural fullness. Comes with a mini angled brush.' },
-  { id: 'b1', category: 'blush', name: 'Cloud Paint Powder Blush', price: '$26.00', image: 'images/blush_1_1778046910480.png', desc: 'Soft pastel peach blush that melts into the skin for a natural, seamless flush. Silky finish that lasts all day.' },
-  { id: 'b2', category: 'blush', name: 'Dewy Liquid Blush', price: '$28.00', image: 'images/blush_2_1778046927456.png', desc: 'A highly pigmented, blendable liquid blush dropping a soft pink, glossy hue. Gives a healthy, from-within glow.' },
-  { id: 'l1', category: 'lip', name: 'Glass Water Tint', price: '$20.00', image: 'images/lip_1_1778046946195.png', desc: 'A long-lasting lip tint in cherry red with a juicy, high-shine finish. Keeps lips hydrated and stained beautifully.' },
-  { id: 'l2', category: 'lip', name: 'Velvet Matte Lipstick', price: '$25.00', image: 'images/lip_2_1778046964576.png', desc: 'A smooth, non-drying matte lipstick in a warm, elegant coral shade. Comfortably coats lips in rich color.' },
-  { id: 'l3', category: 'lip', name: 'Glow Melting Balm', price: '$18.00', image: 'images/lip_3_1778047002901.png', desc: 'A sheer, moisturizing lip balm providing a hint of soft pink color and intense hydration. Perfect for everyday wear.' },
-  { id: 'o1', category: 'others', name: 'Cloud Brush Set', price: '$65.00', image: 'images/other_1_1778047017444.png', desc: 'A premium set of ultra-soft synthetic brushes for flawless makeup application. Includes all essential tools.' },
-  { id: 'o2', category: 'others', name: 'Pure Micellar Cleanser', price: '$30.00', image: 'images/other_2_1778047030617.png', desc: 'A gentle, refreshing makeup remover that effectively lifts away impurities without stripping the skin of moisture.' },
-  { id: 'o3', category: 'others', name: 'Dewy Setting Spray', price: '$32.00', image: 'images/other_3_1778047045839.png', desc: 'A fine mist setting spray that locks in makeup while imparting a radiant, healthy glow. Refreshing and lightweight.' }
+  { id: 'f1', category: 'foundation', name: 'Lumière 琉璃光澤粉底液', price: '$45.00', image: 'images/foundation_1_1778046744474.png', desc: '輕盈水潤的粉底液，提供可堆疊的遮瑕力與透亮的玻璃光澤妝效。富含保濕精華，讓肌膚全天候煥發光彩。' },
+  { id: 'f2', category: 'foundation', name: 'Lumière 完美無瑕氣墊粉餅', price: '$52.00', image: 'images/foundation_2_1778046757732.png', desc: '隨身攜帶的氣墊粉餅，具備 SPF 50+ 防曬係數，提供完美的柔焦效果。時尚簡約的設計，非常適合隨時補妝。' },
+  { id: 'es1', category: 'eyeshadow', name: '蜜桃櫻花九色眼影盤', price: '$38.00', image: 'images/eyeshadow_1_1778046772609.png', desc: '九色眼影盤，包含溫暖的蜜桃色與大地棕色調，打造百變眼妝。高顯色度與奶油般滑順的質地。' },
+  { id: 'es2', category: 'eyeshadow', name: '星塵閃耀單色眼影', price: '$22.00', image: 'images/eyeshadow_2_1778046787807.png', desc: '多維度的亮片眼影，為任何眼妝增添耀眼光芒。持久服貼，零飛粉。' },
+  { id: 'el1', category: 'eyeliner', name: '極致精準抗暈眼線液', price: '$18.00', image: 'images/eyeliner_1_1778046837153.png', desc: '超細緻筆尖的極黑眼線液，輕鬆描繪銳利精準的眼線。防水防汗不暈染配方。' },
+  { id: 'el2', category: 'eyeliner', name: '絲滑柔順眼線膠筆', price: '$16.00', image: 'images/eyeliner_2_1778046852546.png', desc: '抗暈染眼線膠筆，深焙濃縮咖啡棕色，打造柔和深邃的煙燻妝感。滑順好畫不拉扯眼皮。' },
+  { id: 'eb1', category: 'eyebrow', name: '立體塑型雙頭眉筆', price: '$15.00', image: 'images/eyebrow_1_1778046869278.png', desc: '雙頭設計眉筆，包含精細筆芯與柔和眉刷。輕鬆打造自然立體的眉型。' },
+  { id: 'eb2', category: 'eyebrow', name: '柔焦雙色眉粉盤', price: '$24.00', image: 'images/eyebrow_2_1778046882971.png', desc: '雙色眉粉盤，可自由調配專屬色調，呈現自然豐盈感。內附迷你斜角眉刷。' },
+  { id: 'b1', category: 'blush', name: '雲朵柔霧粉彩腮紅', price: '$26.00', image: 'images/blush_1_1778046910480.png', desc: '柔和的粉彩蜜桃色腮紅，完美融入肌膚，呈現自然無縫的紅潤感。絲滑妝效全天持久。' },
+  { id: 'b2', category: 'blush', name: '水光透亮液態腮紅', price: '$28.00', image: 'images/blush_2_1778046927456.png', desc: '高顯色度且易暈染的液態腮紅，滴管設計，呈現柔和粉紅的光澤色調。散發由內而外的健康光澤。' },
+  { id: 'l1', category: 'lip', name: '琉光水感唇釉', price: '$20.00', image: 'images/lip_1_1778046946195.png', desc: '持久型唇釉，櫻桃紅潤色澤，帶有水潤高光澤感。保持雙唇水潤並留下美麗染唇效果。' },
+  { id: 'l2', category: 'lip', name: '絲絨霧面唇膏', price: '$25.00', image: 'images/lip_2_1778046964576.png', desc: '滑順不拔乾的霧面唇膏，溫暖優雅的珊瑚色調。給予雙唇舒適豐富的色彩包覆。' },
+  { id: 'l3', category: 'lip', name: '水潤融光護唇膏', price: '$18.00', image: 'images/lip_3_1778047002901.png', desc: '輕透保濕護唇膏，提供一抹淡淡的柔和粉色與深層保濕。日常妝容的完美選擇。' },
+  { id: 'o1', category: 'others', name: '雲朵無痕刷具組', price: '$65.00', image: 'images/other_1_1778047017444.png', desc: '頂級超柔軟人造纖維刷具組，打造無瑕妝容。包含所有必備的化妝刷具。' },
+  { id: 'o2', category: 'others', name: '純淨保濕卸妝水', price: '$30.00', image: 'images/other_2_1778047030617.png', desc: '溫和清爽的卸妝水，有效帶走臉部髒汙與彩妝，同時不帶走肌膚水分。' },
+  { id: 'o3', category: 'others', name: '水光保濕定妝噴霧', price: '$32.00', image: 'images/other_3_1778047045839.png', desc: '極細緻微粒定妝噴霧，鎖住妝容的同時賦予肌膚煥發健康光澤。清爽且輕盈無負擔。' }
 ];
 
 const categoryMap = {
